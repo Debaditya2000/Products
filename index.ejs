@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="red">
+    <form name="f1" method="post" action="/calc">
+        <table>
+            <tr>
+                <th colspan="2"><h1>A Simple Calculator</h1></th>
+            </tr>
+            <tr>
+                <td>First Number</td>
+                <td><input type="text" name="txt1" value= "<%=x%>"></td>
+            </tr>
+            <tr>
+                <td>Second Number</td>
+                <td><input type="text" name="txt2" value= "<%=y%>"></td>
+            </tr>
+            <tr>
+                <td>Select Operator</td>
+                <td><select name="op">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="x">x</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>RESULT</td>
+                <td><input type="text" name="txt3" value= "<%=result%>"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button name="b1">+</button>
+                 </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
